@@ -7,14 +7,14 @@ def listToString(listIn):
     strOut += 'and ' + str(listIn[-1])
     return strOut
     
-def listToPrintString(listIn):
+def listToPrintStringDad(listIn):
     for i in range(len(listIn)-1):
         print(str(listIn[i]), end=', ')
     
     print("and " + str(listIn[-1]))
     
         
-def listToPrintString2(listIn):
+def listToPrintStringIf(listIn):
     for i in range(len(listIn)):
         if i != (len(listIn) -1):
             print(str(listIn[i]), end=', ')
@@ -25,17 +25,13 @@ def listToPrintString2(listIn):
 bestList = [1,3,3,3,3,3,3,2,3,4,5]
 spam = ['apples', 'bananas', 'tofu', 'cats']
 
-#make the strs
-bestListStr = listToString(bestList)
-spamStr = listToString(spam)
-
 #print them 
 print('My Way:')
-print(bestListStr)
-print(spamStr)
+print(listToString(bestList))
+print(listToString(spam))
 print('\nYour Way:')
-listToPrintString(bestList)
-listToPrintString(spam)
+listToPrintStringDad(bestList)
+listToPrintStringDad(spam)
 print('\nIf Way:')
-listToPrintString2(bestList)
-listToPrintString2(spam)
+listToPrintStringIf(bestList)
+listToPrintStringIf(spam)
