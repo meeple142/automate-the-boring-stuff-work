@@ -7,9 +7,14 @@ def listToString(listIn):
     strOut += 'and ' + str(listIn[-1])
     return strOut
     
+#the lists I'm gunna use    
 bestList = [1,3,3,3,3,3,3,2,3,4,5]
-
 spam = ['apples', 'bananas', 'tofu', 'cats']
 
-print(listToString(bestList))
-print(listToString(spam))
+#make the strs
+bestListStr = listToString(bestList)
+spamStr = listToString(spam)
+
+#print them 
+print(bestListStr)
+print(spamStr)
